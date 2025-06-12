@@ -11,7 +11,7 @@ export interface MoodEntry {
   timestamp: Date;
 }
 
-export let moods: MoodEntry[] = [];
+export const moods: MoodEntry[] = [];
 
 export function addMood(mood: Omit<MoodEntry, 'id' | 'timestamp'>): MoodEntry {
   const newMood: MoodEntry = {

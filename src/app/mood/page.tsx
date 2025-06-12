@@ -46,7 +46,7 @@ export default function MoodPage() {
     }
   };
 
-  const handleEmojiClick = (emojiData: any) => {
+  const handleEmojiClick = (emojiData: { emoji: string; }) => {
     setCustomMoodEmoji(emojiData.emoji);
     setShowEmojiPicker(false);
   };
@@ -62,7 +62,18 @@ export default function MoodPage() {
 
     setIsSubmitting(true);
     try {
-      const payload = {
+      type Payload = {
+        employeeName: string;
+        employeeId: string;
+        mood: string;
+        comment?: string;
+        customMood?: {
+          emoji: string;
+          label: string;
+        };
+      };
+
+      const payload: Payload = {
         employeeName: employeeName.trim(),
         employeeId: employeeId.trim(),
         mood: selectedMood,

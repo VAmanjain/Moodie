@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const moods = getMoods();
     return NextResponse.json(moods);
-  } catch (error) {
+  } catch  {
     return NextResponse.json(
       { error: 'Failed to fetch moods' },
       { status: 500 }
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
     });
     
     return NextResponse.json(newMood, { status: 201 });
-  } catch (error) {
+  } catch  {
     return NextResponse.json(
       { error: 'Failed to create mood entry' },
       { status: 500 }

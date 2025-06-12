@@ -4,6 +4,7 @@ import React from "react";
 import { Damion } from "next/font/google";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const damion = Damion({
   weight: "400",
@@ -41,10 +42,15 @@ const FloatingImage: React.FC<FloatingImageProps> = ({
         ease: "easeInOut",
       }}
     >
-      <img
+      <Image
         src={src}
         alt={alt}
         className="w-16 h-16 md:w-24 md:h-24 object-contain drop-shadow-lg"
+        width={96}
+        height={96}
+        priority
+        draggable={false}
+        loading="lazy"
       />
     </motion.div>
   );
@@ -95,7 +101,7 @@ export default function HomePage() {
 
       <div className="w-full md:text-8xl text-6xl max-w-3xl md:max-w-7xl text-center  grid gap-6">
         <h1 className=" font-bold inline ">
-          Track your team's
+          {`Track your team's`}
           <span
             className={
               `${damion.className}` +

@@ -1,12 +1,4 @@
 import React from 'react'
-import { Damion } from 'next/font/google';
-
-
-const damion = Damion({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-damion",
-});
 
 
 const Footer = () => {
