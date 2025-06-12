@@ -62,7 +62,7 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100  p-8 pt-30 ">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100  p-8 py-30 ">
       <div className="max-w-6xl mx-auto">
         <Card>
           <CardHeader>

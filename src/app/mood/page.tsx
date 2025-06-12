@@ -110,7 +110,7 @@ export default function MoodPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4 pt-30">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4 py-30">
       <Card className="w-full max-w-2xl gap-6">
         <CardHeader className="text-center gap-6">
           <CardTitle className={"text-4xl font-bold text-teal-600" + ` ${damion.className} `}>Let us know how you are feeling?</CardTitle>
