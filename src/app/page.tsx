@@ -50,7 +50,6 @@ const FloatingImage: React.FC<FloatingImageProps> = ({
         height={96}
         priority
         draggable={false}
-        loading="lazy"
       />
     </motion.div>
   );
@@ -60,25 +59,25 @@ export default function HomePage() {
 
   const floatingImages = [
     {
-      src: "happy-face (1).png",
+      src: "/happy-face (1).png",
       alt: "Happy emoji",
       position: "top-30 left-16 md:left-20",
       delay: 0,
     },
     {
-      src: "cool.png",
+      src: "/cool.png",
       alt: "Cool emoji",
       position: "top-42 right-16 md:right-20",
       delay: 1.5,
     },
     {
-      src: "star.png",
+      src: "/star.png",
       alt: "Excited emoji",
       position: "bottom-32 md:bottom-42 left-16 md:left-32",
       delay: 3,
     },
     {
-      src: "confused.png",
+      src: "/confused.png",
       alt: "Confused emoji",
       position: "bottom-30 right-16 md:right-32",
       delay: 4.5,
