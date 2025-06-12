@@ -19,7 +19,7 @@ Moodie is a modern employee mood tracking application that helps teams monitor a
 
 1. **Clone the repository**
 ```powershell
-git clone https://github.com/yourusername/moodie.git
+git clone https://github.com/vamanjain/moodie.git
 cd moodie
 ```
 
